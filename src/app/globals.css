@@ -1,0 +1,96 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  * {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+
+  html {
+    scroll-behavior: smooth;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+  body {
+    background-color: rgb(var(--color-primary-rgb));
+    color: rgb(var(--color-on-primary-rgb));
+    font-family: var(--font-body), system-ui, sans-serif;
+    line-height: 1.6;
+    overflow-x: hidden;
+  }
+
+  ::selection {
+    background-color: rgb(var(--color-secondary-rgb) / 0.3);
+    color: rgb(var(--color-on-primary-rgb));
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    font-family: var(--font-heading), system-ui, sans-serif;
+    font-weight: var(--font-weight-heading);
+    letter-spacing: var(--letter-spacing-heading);
+    text-transform: var(--heading-transform);
+    line-height: 1.1;
+  }
+}
+
+@layer components {
+  .section-padding {
+    @apply px-4 py-16 sm:px-6 md:py-24 lg:px-8;
+  }
+
+  .container-max {
+    @apply mx-auto w-full max-w-7xl;
+  }
+
+  .text-gradient {
+    @apply bg-clip-text text-transparent;
+    background-image: linear-gradient(
+      135deg,
+      rgb(var(--color-secondary-rgb)),
+      rgb(var(--color-accent-rgb))
+    );
+  }
+
+  .card-surface {
+    @apply rounded-brand border border-white/10 bg-surface p-6;
+    transition: all var(--animation-speed) ease;
+  }
+
+  .card-surface:hover {
+    @apply border-secondary/30 bg-surface-alt;
+    transform: translateY(-2px);
+  }
+
+  .glow-secondary {
+    box-shadow: 0 0 20px rgb(var(--color-secondary-rgb) / 0.3);
+  }
+
+  .glow-accent {
+    box-shadow: 0 0 20px rgb(var(--color-accent-rgb) / 0.3);
+  }
+
+  .animate-on-scroll {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+  }
+
+  .animate-on-scroll.is-visible {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@layer utilities {
+  .scrollbar-hide {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+  }
+  .scrollbar-hide::-webkit-scrollbar {
+    display: none;
+  }
+}
