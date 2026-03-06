@@ -8,7 +8,7 @@ interface GoogleMapProps {
 
 export function GoogleMap({ className, height = '400px' }: GoogleMapProps) {
   const { lat, lng, mapZoom = 16 } = dentistConfig.location;
-  const src = `https://www.google.com/maps/embed/v1/place?key=AIzaSyBFw0Qbyq9zTFTd-tUY6dZWTgaQzuU17R8&q=${lat},${lng}&zoom=${mapZoom}`;
+  const src = `https://www.google.com/maps/embed/v1/place?key=${process.env.NEXT_PUBLIC_GOOGLE_MAPS_API_KEY}&q=${lat},${lng}&zoom=${mapZoom}`;
 
   return (
     <div
