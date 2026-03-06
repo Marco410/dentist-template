@@ -1,6 +1,7 @@
 import type { DentistConfig } from 'kadesh/config/types';
 import { defaultDentist } from 'kadesh/config/dentists/default';
 import { dentalSmile } from 'kadesh/config/dentists/dental-smile';
+import { patrizioGarcia } from 'kadesh/config/dentists/patrizio-garcia';
 
 /**
  * Registry of dentist configs by slug.
@@ -9,6 +10,7 @@ import { dentalSmile } from 'kadesh/config/dentists/dental-smile';
 const dentists: Record<string, DentistConfig> = {
   default: defaultDentist,
   'dental-smile': dentalSmile,
+  'patrizio-garcia': patrizioGarcia,
 };
 
 /**
@@ -16,7 +18,8 @@ const dentists: Record<string, DentistConfig> = {
  * Use NEXT_PUBLIC_DENTIST_SLUG (e.g. "dental-smile") to serve the matching site.
  */
 export function getDentistConfig(): DentistConfig {
-  const slug = process.env.NEXT_PUBLIC_DENTIST_SLUG;
+  const slug =
+    process.env.NEXT_PUBLIC_DENTIST_SLUG ?? process.env.NEXT_PUBLIC_GYM_SLUG;
   if (slug && dentists[slug]) return dentists[slug];
   return defaultDentist;
 }
