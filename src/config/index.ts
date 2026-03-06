@@ -2,6 +2,7 @@ import type { DentistConfig } from 'kadesh/config/types';
 import { defaultDentist } from 'kadesh/config/dentists/default';
 import { dentalSmile } from 'kadesh/config/dentists/dental-smile';
 import { patrizioGarcia } from 'kadesh/config/dentists/patrizio-garcia';
+import { biodens } from 'kadesh/config/dentists/biodens';
 
 /**
  * Registry of dentist configs by slug.
@@ -11,6 +12,7 @@ const dentists: Record<string, DentistConfig> = {
   default: defaultDentist,
   'dental-smile': dentalSmile,
   'patrizio-garcia': patrizioGarcia,
+  biodens,
 };
 
 /**
