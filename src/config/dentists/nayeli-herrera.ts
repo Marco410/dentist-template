@@ -4,7 +4,7 @@ import type { DentistConfig } from 'kadesh/config/types';
 export const nayeliHerrera: DentistConfig = {
   name: 'Dra. Nayeli Herrera',
   category: 'Dentista',
-  address: 'J. Cristino González 47, Leona Vicario, 58080 Morelia, Mich.',
+  address: 'J. Cristino González 47, Leona Vicario, 58080 Morelia, Michoacán',
   phone: '443 841 4096',
   whatsapp: '5214438414096',
   email: undefined,
