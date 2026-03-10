@@ -4,6 +4,7 @@ import { dentalSmile } from 'kadesh/config/dentists/dental-smile';
 import { patrizioGarcia } from 'kadesh/config/dentists/patrizio-garcia';
 import { biodens } from 'kadesh/config/dentists/biodens';
 import { lauraZavala } from 'kadesh/config/dentists/laura-zavala';
+import { dentohCare } from 'kadesh/config/dentists/dentoh-care';
 
 /**
  * Registry of dentist configs by slug.
@@ -15,6 +16,7 @@ const dentists: Record<string, DentistConfig> = {
   'patrizio-garcia': patrizioGarcia,
   biodens,
   'laura-zavala': lauraZavala,
+  'dentoh-care': dentohCare,
 };
 
 /**
