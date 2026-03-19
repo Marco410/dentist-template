@@ -1,0 +1,11 @@
+<svg width="1200" height="675" viewBox="0 0 1200 675" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="1200" height="675" fill="#082F49"/>
+  <rect x="70" y="70" width="1060" height="535" rx="26" fill="#0C4A6E"/>
+  <rect x="120" y="130" width="320" height="415" rx="24" fill="#0369A1" fill-opacity="0.45"/>
+  <rect x="480" y="130" width="600" height="120" rx="16" fill="#E0F2FE" fill-opacity="0.2"/>
+  <rect x="480" y="270" width="600" height="120" rx="16" fill="#BAE6FD" fill-opacity="0.22"/>
+  <rect x="480" y="410" width="600" height="135" rx="16" fill="#7DD3FC" fill-opacity="0.22"/>
+  <text x="120" y="112" fill="#E0F2FE" font-size="34" font-family="Arial, sans-serif" font-weight="700">Area de atencion</text>
+  <text x="145" y="228" fill="#E0F2FE" font-size="26" font-family="Arial, sans-serif">Imagen de prueba</text>
+  <text x="145" y="268" fill="#BAE6FD" font-size="22" font-family="Arial, sans-serif">Coloca aqui fotos reales del negocio</text>
+</svg>

@@ -1,0 +1,10 @@
+<svg width="1200" height="675" viewBox="0 0 1200 675" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="1200" height="675" fill="#111827"/>
+  <rect x="80" y="86" width="1040" height="503" rx="28" fill="#1F2937"/>
+  <rect x="126" y="136" width="948" height="403" rx="22" fill="#374151"/>
+  <path d="M126 420H1074V539H126V420Z" fill="#0EA5E9" fill-opacity="0.28"/>
+  <circle cx="206" cy="248" r="54" fill="#22D3EE" fill-opacity="0.5"/>
+  <circle cx="1000" cy="248" r="54" fill="#22D3EE" fill-opacity="0.5"/>
+  <text x="160" y="124" fill="#F3F4F6" font-size="34" font-family="Arial, sans-serif" font-weight="700">Equipo y esterilizacion</text>
+  <text x="420" y="498" fill="#E5E7EB" font-size="30" font-family="Arial, sans-serif">Imagen de prueba</text>
+</svg>

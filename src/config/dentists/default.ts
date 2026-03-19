@@ -1,12 +1,12 @@
 import type { DentistConfig } from 'kadesh/config/types';
 
 export const defaultDentist: DentistConfig = {
-  name: 'Clínica Dental Integral',
+  name: 'Clínica Integral',
   category: 'Clínica Dental',
   address: 'Av. Principal 123, Col. Centro, 58000 Morelia, Michoacán',
   phone: '443 123 4567',
   whatsapp: '5214431234567',
-  email: 'contacto@clinicadentalintegral.com',
+  email: 'contacto@clinicaintegral.com',
   rating: 4.9,
   totalReviews: 127,
   hasWebsite: true,
@@ -22,12 +22,12 @@ export const defaultDentist: DentistConfig = {
   },
 
   social: {
-    facebook: 'https://facebook.com/clinicadentalintegral',
-    instagram: 'https://instagram.com/clinicadentalintegral',
+    facebook: 'https://facebook.com/clinicaintegral',
+    instagram: 'https://instagram.com/clinicaintegral',
   },
 
   hero: {
-    slogan: 'Tu sonrisa, nuestra prioridad.',
+    slogan: 'Tu salud, nuestra prioridad.',
     subtext: 'Atención personalizada con tecnología de vanguardia. Blanqueamiento, ortodoncia, implantes y más.',
     ctaPrimary: 'Agendar cita',
     ctaSecondary: 'Conocer más',
@@ -42,6 +42,11 @@ export const defaultDentist: DentistConfig = {
       { title: '5', description: 'Especialistas' },
       { title: '100%', description: 'Esterilización' },
       { title: '24/7', description: 'Urgencias' },
+    ],
+    images: [
+      '/images/demo/facility-1.jpg',
+      '/images/demo/facility-2.jpg',
+      '/images/demo/facility-3.jpg',
     ],
   },
 
@@ -141,7 +146,11 @@ export const defaultDentist: DentistConfig = {
   ],
 
   facilities: {
-    images: [],
+    images: [
+      '/images/demo/facility-1.jpg',
+      '/images/demo/facility-2.jpg',
+      'https://loremflickr.com/cache/resized/6114_6279979561_80f45617b2_k_1280_720_nofilter.jpg',
+    ],
     features: [
       'Consultorios equipados',
       'Esterilización centralizada',
@@ -159,7 +168,22 @@ export const defaultDentist: DentistConfig = {
     {
       title: 'Pagos en línea',
       description: 'Paga tu tratamiento con tarjeta o transferencia.',
-      status: 'in-progress',
+      status: 'planned',
+    },
+    {
+      title: 'Análisis de estudios con IA',
+      description: 'Análisis de estudios con IA para diagnosticar y tratar problemas clinicos. Creación de graficas para visualizar los datos.',
+      status: 'planned',
+    },
+    {
+      title: 'Sistema de gestión de pacientes',
+      description: 'Sistema de gestión de pacientes para administrar citas, historiales clínicos y facturación.',
+      status: 'planned',
+    },
+    {
+      title: 'Sistema de gestión de pacientes',
+      description: 'Sistema de gestión de pacientes para administrar citas, historiales clínicos y facturación.',
+      status: 'planned',
     },
   ],
 
@@ -173,9 +197,9 @@ export const defaultDentist: DentistConfig = {
   sections: {
     hero: { enabled: true, variant: 'gradient' },
     about: { enabled: true, variant: 'default' },
-    services: { enabled: true, variant: 'cards' },
+    services: { enabled: true, variant: 'grid' },
     doctors: { enabled: true, variant: 'cards' },
-    testimonials: { enabled: true, variant: 'carousel' },
+    testimonials: { enabled: true, variant: 'grid' },
     schedule: { enabled: true, variant: 'table' },
     pricing: { enabled: true, variant: 'cards' },
     location: { enabled: true, variant: 'split' },
@@ -187,7 +211,7 @@ export const defaultDentist: DentistConfig = {
   },
 
   seo: {
-    siteUrl: 'https://clinicadentalintegral.com',
+    siteUrl: 'https://clinicaintegral.com',
     keywords: ['clínica dental Morelia', 'dentista Morelia', 'ortodoncia', 'implantes dentales'],
     ogImage: '/opengraph-image',
     locale: 'es_MX',
