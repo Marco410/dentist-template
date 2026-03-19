@@ -31,7 +31,8 @@ export const defaultDentist: DentistConfig = {
     subtext: 'Atención personalizada con tecnología de vanguardia. Blanqueamiento, ortodoncia, implantes y más.',
     ctaPrimary: 'Agendar cita',
     ctaSecondary: 'Conocer más',
-    backgroundImage: undefined,
+    backgroundImage: "https://loremflickr.com/cache/resized/6114_6279979561_80f45617b2_k_1280_720_nofilter.jpg",
+    backgroundVideo: 'https://cdn.pixabay.com/video/2022/12/11/142500-780232135_large.mp4',
   },
 
   about: {
@@ -49,14 +50,13 @@ export const defaultDentist: DentistConfig = {
       '/images/demo/facility-3.jpg',
     ],
   },
-
   services: [
-    { name: 'Limpieza dental', description: 'Profilaxis y revisión completa' },
-    { name: 'Ortodoncia', description: 'Brackets y alineadores invisibles' },
-    { name: 'Implantes', description: 'Rehabilitación con implantes dentales' },
-    { name: 'Blanqueamiento', description: 'Blanqueamiento profesional en consultorio' },
-    { name: 'Endodoncia', description: 'Tratamiento de conductos' },
-    { name: 'Odontopediatría', description: 'Atención para niños' },
+    { name: 'Consulta y valoración', description: 'Exploración inicial, diagnóstico y plan de tratamiento personalizado', image: 'https://cdn.pixabay.com/photo/2018/11/20/00/05/facial-cleansing-3826287_1280.jpg' },
+    { name: 'Limpieza dental', description: 'Profilaxis, eliminación de sarro y recomendaciones de higiene', image: 'https://cdn.pixabay.com/photo/2026/02/28/08/24/physiosrus-manual-therapy-services-10148280_1280.jpg' },
+    { name: 'Seguimiento', description: 'Al pendiente de tu recuperación después de cada cita', image: 'https://cdn.pixabay.com/photo/2025/05/29/08/25/doctor-9628974_1280.jpg' },
+    { name: 'Estudios de laboratorio', description: 'Realización de estudios de laboratorio para diagnosticar y tratar problemas clinicos', image: 'https://cdn.pixabay.com/photo/2023/10/27/06/02/clinical-trial-consulting-8344100_1280.jpg' },
+    { name: 'Terapia manual', description: 'Espacio especializado en el bienestar emocional', image: '/images/demo/facility-2.jpg' },
+    { name: 'Extracciones dentales', description: 'Extracción simple y quirúrgica con protocolo de seguridad', image: 'https://cdn.pixabay.com/photo/2014/08/26/21/53/dentist-428645_1280.jpg' },
   ],
 
   features: {
@@ -195,7 +195,7 @@ export const defaultDentist: DentistConfig = {
   },
 
   sections: {
-    hero: { enabled: true, variant: 'gradient' },
+    hero: { enabled: true, variant: 'video' },
     about: { enabled: true, variant: 'default' },
     services: { enabled: true, variant: 'grid' },
     doctors: { enabled: true, variant: 'cards' },

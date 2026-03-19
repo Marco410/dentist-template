@@ -15,10 +15,17 @@ export function ServicesGrid() {
             key={service.name}
             className="group relative flex aspect-square items-end overflow-hidden rounded-brand p-4 sm:p-6"
             style={{
-              background: `linear-gradient(135deg, 
-                rgb(var(--color-secondary-rgb) / ${0.1 + (i * 0.05)}) 0%, 
-                rgb(var(--color-accent-rgb) / ${0.05 + (i * 0.03)}) 100%),
-                rgb(var(--color-surface-rgb))`,
+              backgroundImage: service.image
+                ? `linear-gradient(135deg,
+                    rgb(var(--color-secondary-rgb) / ${0.28 + i * 0.03}) 0%,
+                    rgb(var(--color-accent-rgb) / ${0.2 + i * 0.02}) 100%),
+                   url(${service.image})`
+                : `linear-gradient(135deg,
+                    rgb(var(--color-secondary-rgb) / ${0.1 + i * 0.05}) 0%,
+                    rgb(var(--color-accent-rgb) / ${0.05 + i * 0.03}) 100%)`,
+              backgroundColor: 'rgb(var(--color-surface-rgb))',
+              backgroundSize: 'cover',
+              backgroundPosition: 'center',
             }}
           >
             <div className="absolute inset-0 bg-gradient-to-t from-primary/80 to-transparent" />

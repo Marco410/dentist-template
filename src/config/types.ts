@@ -51,6 +51,7 @@ export interface AboutConfig {
 export interface ServiceItem {
   name: string;
   description: string;
+  image?: string;
 }
 
 // ─── Features (flags) ──────────────────────────────────────────────────────
